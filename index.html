@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://kit.fontawesome.com/9c1185fa4f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1><strong> Priyanka Singh</strong></h1>
+                <ul>
+                    <li><a href="#header">Home</a></a></li>
+                    <li><a href="#about">About</a></a></li>
+                    <li><a href="#services">Services</a></a></li>
+                    <li><a href="#skills">Skills</a></a></li>
+                    <li><a href="#contact">Contact</a></a></li>
+                    
+                </ul>
+                
+                
+            </nav>
+            <div class="header-text">
+                <h1>Hey, I'm <span>Priyanka</span> I am a passionate  <div></div><span id="element"></span> </h1>
+            </div>
+        </div>
+    </div>
+    
+
+
+<!---------about----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            
+            <div class="about-col-1">
+                <img src="pp.jpg">
+            </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>I am Priyanka, fourth year undergraduate student pursuing Btech in Computer science.I have great interest and enthusiast in learning in the field of technology. I aspire to be an integral part of a dynamic team, where I can collaborate, learn, and grow while making a significant impact in the field of technology</p>
+                    <div class="tab-title">
+                       
+                        <p class="tab-links active-link"onclick="opentab('Project')">Projects</p>
+                        <p class="tab-links"onclick="opentab('Education')">Education</p>
+                    </div>
+                
+               
+               
+                <div class="tab-contents active-tab" id="Project">
+                    <ul>
+                        <li><span>Web Clonning</span><br>Spotify Clone using HTML , CSS , Javascript. </li>
+                        <li><span>Personal Portfolio</span><br>Portfolio using HTML , CSS , JavaScript .</li>
+                        <li><span>Calculator using HTML,CSS,Javascript</span><br>The calculator performs basic arithematic calculation .</li>
+                        <li><span>TO-DO-list</span><br> List to add and delete the tasks.</li>  
+                        
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents " id="Education">
+                    <ul>
+                        <li><span>2020 - Current</span><br>Btech from - Shri Ramswaroop Memorial Group Of Professional Colleges</li>
+                        <li><span>2018 - 2020</span><br>12th from - CMS phase-1 ,Gomti nagar Lucknow</li>
+                        <li><span>2017 - 2018</span><br>10th from - Gurukul Academy</li>
+                        
+                        
+                    </ul>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----------skillss-------------->
+
+        <div id="skills">
+
+        <h1 class="sub-title">Technical Skills</h1>
+        <div class="container1">
+            <div class="progress-container">
+                <h4><i class="fa-brands fa-java"></i>     Java</h4>
+                <div class="progress-bar">
+                    <span data-width="80%"></span>
+                </div>
+            </div>
+            <div class="progress-container">
+                <h4 ><i class="fa-brands fa-python"></i>     Python</h4>
+                <div class="progress-bar">
+                    <span data-width="70%"></span>
+                </div>
+            </div>
+
+            <div class="progress-container">
+                <h4 > <i class="fa-brands fa-html5"></i>     HTML</h4>
+                <div class="progress-bar">
+                    <span data-width="80%"></span>
+                </div>
+            </div>
+            <div class="progress-container">
+                <h4><i class="fa-brands fa-css3"></i>    CSS</h4>
+                <div class="progress-bar">
+                <span data-width="60%"></span>
+                </div>
+            </div>
+            <div class="progress-container">
+                <h4><i class="fa-brands fa-js"></i>     JavaScript</h4>
+                <div class="progress-bar">
+                <span data-width="30%"></span>
+                </div>
+            </div>
+            <div class="progress-container">
+                <h4><i class="fa-brands fa-c"></i>   C</h4>
+                <div class="progress-bar">
+                <span data-width="60%"></span>
+                </div>
+            </div>
+        </div>
+        <script src="js/main.js"></script>
+        <script> spans = document.querySelectorAll('.progress-bar span');
+
+        spans.forEach((span) => {
+        span.style.width = span.dataset.width;
+        span.innerHTML = span.dataset.width;
+        });
+</script>
+        </div>
+    </div>
+
+    
+    <!--------------SERVICES---------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title" ></h1> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>TO-DO List</h2>
+                    <p>The To-Do List is developed using HTML , CSS , Jvascript for the front-end and store the tasks in local storage or a simple
+                        backend server using technologies .<br></p>
+                    <div class="clonimg"> <img src="todolist.png"></div>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web clonning</h2>
+                    <p> I have created  the web clone of Spotify using HTML ,  CSS , Javascript for front-end which is the replica of existing website .<br>  </p>
+                   <div class="clonimg"> <img src="Screenshot 2023-08-20 091951.png"></div>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Calculator</h2>
+                    <p> The calculator is created using HTML , CSS , Jvascript for front-end. The calculator performs basic arithmetic calculations . <br></p>
+                    <div class="clonimg"> <img src="Screenshot 2023-08-21 173736.png"></div>
+                    <a href="#">Learn more</a>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+<!---------Contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p ><i class="fa-solid fa-paper-plane"></i>priyankasingh.10020711@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone-flip"></i>7380487365</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/priyanka-singh-bb2660201"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Priyanka-Singh11"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://web.telegram.org/a/t.me/Priyanka_Singh_11"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.instagram.com/priyanka_singh.11/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="updated 2.docx"  download class="btn btn2">Resume </a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text"name="Name" placeholder="Your Name" required>
+                    <input type="email"name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Any Message?"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div> 
+        <div class="copyright">
+            <p> Copyright © Made  by  Priyanka  <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    <script> 
+        var typed = new Typed('#element', {
+        strings: ['Engineer', 'Developer','Learner','Explorer'],
+        typeSpeed: 50,
+    });
+    </script>
+
+
+<script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                 tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+        
+       
+    </script>
+    
+</body>
+</html>
